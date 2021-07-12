@@ -1,8 +1,9 @@
 # ros-navigation-gazebo
-Steps of running the Navigation Simulation on a map previously created using SLAM for ROS robots in the Gazebo environment.
+
+Steps of running the navigation stack on RViz to initialize the localization system, send goals to the robot on a map previously created using SLAM for ROS robots in the Gazebo environment.
 
 
-The navigation will be applied on the map created using the [ros-slam-gazebo] tutorial; make sure to follow the steps in the previous tutorial to obtain appropriate results
+The navigation will be applied on the map created using the [ros-slam-gazebo] tutorial; make sure to follow the steps in this tutorial to obtain appropriate results.
 
 
 ## Gazebo Simulation
@@ -27,7 +28,9 @@ $ source ~/catkin_ws/devel/setup.bash
 $ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/map.yaml
 ```
 
-### Initial Pose Estimation 
+### Initial Pose Estimation
+
+`2D Pose Estimate`: Allows the user to initialize the localization system used by the navigation stack by setting the pose of the robot in the world.
 
 1- In the RViz menu, click `2D Pose Estimate` button.
 
@@ -42,10 +45,12 @@ Launch keyboard teleoperation node to precisely locate the robot, and narrow dow
 ```
 $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 ```
-Then, terminate the keyboard teleoperation node using `Ctrl` + `C`
+Then, terminate the keyboard teleoperation node using `Ctrl` + `C`.
 
 
 ### Set Navigation Goal
+
+`2D Nav Goal`: Allows the user to send a goal to the navigation by setting a desired pose for the robot to achieve.
 
 1- Click the `2D Nav Goal` button in the RViz menu.
 
