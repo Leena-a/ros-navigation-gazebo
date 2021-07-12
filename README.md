@@ -16,8 +16,7 @@ $ roslaunch turtlebot3_gazebo turtlebot3_world.launch
 ```
 
 
-![TurtleBot3_Gazebo](https://user-images.githubusercontent.com/52850659/125320653-97dc2380-e344-11eb-9b17-8c7a3accca31.png)
-
+![turtlebot3_gazebo](https://user-images.githubusercontent.com/52850659/125345074-bf40e980-e360-11eb-87b9-9f0ae2857841.jpg)
 
 
 ## Navigation
